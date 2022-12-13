@@ -13,10 +13,10 @@ public class PerfectNumber {
                     sum += i;
                 }
             }
-            if (sum == number) {
+            if ((sum == number)&&(number>0)) {
                 System.out.println("This number is a perfect number.");
 
-            } else {
+            } else if ((!(sum == number)&&(number>0))){
                 System.out.println("This number is not a perfect number.\n" +
                         "Try a different number.");
             }
